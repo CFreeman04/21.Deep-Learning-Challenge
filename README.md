@@ -167,3 +167,51 @@ The report should contain the following:
 -   Answer all 6 questions in the results section (10)
 -   Summarize the overall results of your model (4)
 -   Describe how you could use a different model to solve the same problem, and explain why you would use that model (6)
+
+--------------------------------------------------------------------------------------------
+
+### RESULTS
+
+ATTEMPT 1
+The first attempt (Models/AlphabetSoupCharity.h5) resulted in an **accuracy score of 72.68%.  This was the highest score of the three models.** This means that 72.68% of the model's predicted values align with the datatsets true values.
+
+- Binning
+    - Application < 500
+    - Classification < 1000
+- Layers - 2
+    - Layer1 = 100 neurons: activation function = 'relu'
+    - Layer2 = 30 neurons: activation function = 'relu'
+- epochs = 100
+
+![1](Images/1.png)
+
+ATTEMPT 2
+The second attempt (Models/AlphabetSoupCharity_Optimization1.h5) resulted in an **accuracy score of 72.49%.** This means that 72.49% of the model's predicted values align with the datatsets true values.
+
+- Binning
+    - Application < 100
+    - Classification < 100
+- Layers - 3
+    - Layer1 = 125 neurons: activation function = 'relu'
+    - Layer2 = 30 neurons: activation function = 'relu'
+    - Layer3 = 30 neurons: activation function = 'relu'
+- epochs = 100
+
+![2](Images/2.png)
+
+ATTEMPT 3
+The second attempt (Models/AlphabetSoupCharity_Optimization1.h5) resulted in an **accuracy score of 72.5%.** Tis means that 72.5% of the model's predicted values align with the datatsets true values.
+
+- Binning
+    - Application < 100
+    - Classification < 1000
+- Layers - 3
+    - Layer1 = 100 neurons: activation function = 'relu'
+    - Layer2 = 30 neurons: activation function = 'relu'
+    - Layer3 = 30 neurons: activation function = 'relu'
+- epochs = 100
+
+![3](Images/3.png)
+
+### SUMMARY
+In the three attempts I made, the model was unable to achieve a target predictive accuracy higher than 72.68%.  Hypertuning resulted in virtually no improvement. I would consider using another classification model to see if it is better at predicting whether applications will be successful if funded by Alphabet Soup.
